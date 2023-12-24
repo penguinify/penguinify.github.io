@@ -1,0 +1,15 @@
+{
+  "name": "penguinify.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "particles.min.js",
+  "scripts": {
+    "test": "npx tailwindcss -i ./styles.css -o ./build.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
