@@ -1,49 +1,41 @@
-<!-- Tailwind Css -->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>~/penguinify</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="build.css" rel="stylesheet">
+        <title>~/penguinify</title>
+        <link href="css/output.css" rel="stylesheet">
+
         <style>
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
         </style>
     </head>
-    <body class="bg-slate-950 flex items-center justify-center w-full h-screen text-slate-100">
-        <fieldset class="border-slate-600 w-2/5 h-3/5 border-2 rounded-md">
-            <legend class="ml-10 px-3 text-slate-500">~/penguinify - nvim 9.4</legend>
-            <div class="flex w-full h-full flex-col p-14">
-                <div id="home">
-                    <h1 class="text-xl">penguinify</h1>
-                    <h2>web development, ml, and rust</h2>
-                </div>
-                <div id="about" class="hidden">
-                    <h1 class="text-xl">about</h1>
-                    <h2>im penguinify, a neovim/tmux enthusiast, web dev, and learning low level programmer. I know this doesn't sound very unique since this the path most people take, but what sets me apart is the way I make projects. I try to make stuff that people haven't seen before or are in such a small niche that it doesn't matter.</h2>
-                </div>
-                <div class="hidden" id="projects">
-                    <h1 class="text-xl">projects</h1>
-                    <a href="https://github.com/car-axle-client/car-axle-client" class="text-slate-300 underline">car axle client (clickable)</a>
-                </div> 
-                <div class="hidden" id="contact">
-                    <h1 class="text-xl">contact</h1>
-                    <h2>email: penguinifyminecraft@gmail.com</h2>
-                    <h2>discord: penguinify</h2>
-                    <h2>github: penguinify</h2>
-                </div>
-                <div class="mt-10" id="selection-content">
-                    <h2 class="home">1: home</h2>
-                    <h2 class="about">1: about</h2>
-                    <h2 class="projects">2: projects</h2>
-                    <h2 class="contact">3: contact</h2>
-                </div>
-            </div>
-        </fieldset>
+    <body class="frappe bg-ctp-base overflow-hidden">
+        <div class="w-full h-screen flex justify-center items-center overflow-hidden flex-col">
+            <div id="particles-js" class="absolute scale-intro overflow-hidden blur-anim" style="animation-duration: 2s"></div>
+            <div class="text-ctp-sapphire text-8xl block" style="font-family: 'Nunito', sans-serif;">
+                <span class="flex scale-intro font-extrabold" id="title">
+                    <p class="intro" style="animation-delay: 0s;">p</p>
+                    <p class="intro" style="animation-delay: 0.05s;">e</p>
+                    <p class="intro" style="animation-delay: 0.1s;">n</p>
+                    <p class="intro" style="animation-delay: 0.15s;">g</p>
+                    <p class="intro" style="animation-delay: 0.2s;">u</p>
+                    <p class="intro" style="animation-delay: 0.25s;">i</p>
+                    <p class="intro" style="animation-delay: 0.3s;">n</p>
+                    <p class="intro" style="animation-delay: 0.35s;">i</p>
+                    <p class="intro" style="animation-delay: 0.4s;">f</p>
+                    <p class="intro" style="animation-delay: 0.45s;">y</p>
+                </span>
 
+            </div>
+
+        </div>
+    
     </body>
-    <script src="./selection.js">
-        
+
+    <script src="./particles.min.js">
+    </script>
+    <script src="./js/app.js">
+
     </script>
 </html>
